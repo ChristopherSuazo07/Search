@@ -6,32 +6,112 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Product+Sans&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Imágenes de Google</title>
-</head>
-<body>
-    <div>
-        <nav>
-            <a href="avanzada.html">Búsqueda Avanzada</a>
-            <a href="">Imágenes</a>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Google</title>
+    <link rel="icon" type="image/svg" href="assets/images/G__google.png">
+</head> 
+
+<body class="d-flex flex-column">
+    <header class="">
+        <nav class="navbar navbar-expand-lg gap-3 ">
+            <div class="container-fluid p-1 ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse pe-3 " id="navbarNav">
+                    <ul class="navbar-nav gap-3 ms-auto d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="avanzada__a" href="avanzada.html ">Búsqueda Avanzada</a>
+                            
+                          </li>
+                      <li class="nav-item">
+                        <a class="images__a" href="https://www.google.com/intl/es-419/gmail/about/">Gmail</a>
+                        
+                      </li>
+                      <li class="nav-item">
+                        <a class="images__a" href="index.html ">Búsqueda</a>
+                      </li>
+                      <li class="nav-item">
+                        <span class=" avanzada__a"><img class="opacity-50 app__img" src="./assets/images/App__google.svg" alt="App"></span>
+                      </li> 
+                      <li class="nav-item">
+                        <button type="button" class="ms-auto btn btn-primary acceder__btn"><a class=" acceder__a" href="">Acceder</a></button>
+                      </li>
+                    </ul>
+                  </div>
+                
+            </div>
         </nav>
+    </header>
     </div>
-    <div class="container">
-        <h1 class="google">
-            <span style="color: #4285F4;">G</span>
-            <span style="color: #EA4335;">o</span>
-            <span style="color: #FBBC05;">o</span>
-            <span style="color: #4285F4;">g</span>
-            <span style="color: #34A853;">l</span>
-            <span style="color: #EA4335; transform: rotate(-15deg);"id="e">e</span>
-        </h1>
-    </div>
-    
-    <div>
-        <form action="https://www.google.com/images">
-            <input class="search" type="text" name="q">
-            <button>lupa</button>
-        </form>
+
+
+    <main class="h-100">
+        <section>
+            <div class="google d-flex justify-content-center align-items-end  ">
+                <img class="mx-auto img-fluid google__logo" alt="Google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+            </div>
+        </section>
+        <section class="d-flex justify-content-center">
+            <form action="https://www.google.com/images" class="search">
+                
+                <div>
+                    <div class="position-relative input_search__div ">
+                        <div class="form-control search__input rounded-pill barra__input position-relative d-flex align-items-center">
+                            <input class="busqueda" title="Buscar" type="text" name="q">
+                            <span class="material-symbols-outlined lupa position-absolute">search</span>
+                        </div>
+                        <div class="d-flex justify-content-end pe-5    mic__div">
+                                <img class="position__absolute  mic__img" height="20" width="20" src="assets/images/Google_mic.svg" alt="mic">
+                        </div>
+                        <div class="d-flex justify-content-end pe-3   cam__div">
+                                <img class="position__absolute  cam__img " height="24" width="24"src="assets/images/camera_google.svg" alt="cam">
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    <!---->
+                    </div>
+                <div class="d-flex justify-content-center mt-5 gap-2">
+                    <input class="btn search__btn rounded-1" type="submit" value="Buscar con Google"> 
+                    <input class="btn search__btn rounded-1"  type="submit" value="Voy a tener suerte">
+                </div>
+                
+            </form>
+        </section>
+        <section>
         
-    </div>
+            <div class="d-flex justify-content-center pt-4 ofrecido__div">
+                Ofrecido por Google en:  
+                <a class="ps-1 text-decoration-none english__a " href="https://www.google.com/setprefs?sig=0_v_f95mZ0uvHKaboFW0Kn7clxMss%3D&amp;hl=en&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwis9KaQsc-EAxWKPUQIHW4gAwAQ2ZgBCBw">English</a>  
+            </div>
+        
+        </section>
+    </main>
+    
+    <footer>
+        <div class="d-flex justify-content-start ps-2  nicaragua__div ">
+        <p class="mb-3  ps-4 nicaragua__p">Nicaragua</p>
+        </div>
+        <div class="d-flex bd-highlight mt-0 ymb-3 ps-4 pe-4 pt-1 mb-1">
+            <div class="me-1 p-2 bd-highlight"><a class="nav-link text__footer">Sobre Google</a></div>
+            <div class="me-1 p-2 bd-highlight"><a class="nav-link text__footer" href="">Publicidad</a></div>
+            <div class="me-1 p-2 bd-highlight"><a class="nav-link text__footer" href="">Negocios</a></div>
+            <div class="me-auto p-2 bd-highlight"><a class="nav-link text__footer" href="">Cómo funciona la Búsqueda</a></div>
+            
+            <div class="p-2 bd-highlight"><a class="nav-link text__footer">Privacidad</a></div>
+            <div class="p-2 bd-highlight"><a class="nav-link text__footer">Condiciones</a></div>
+            <div class="p-2 bd-highlight"><a class="nav-link text__footer">Preferencias</a></div>
+          </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
 </body>
 </html>
+
+
+
+
+
