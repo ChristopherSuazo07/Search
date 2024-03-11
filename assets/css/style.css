@@ -232,24 +232,24 @@ a {
 
 .mic{
   
-  height: 1.2rem !important;
-  width: 1.2rem !important;
+  height: 1.25rem !important;
+  width: 1.25rem !important;
 
 }
 
 .mic__div{
-  right: 3.7rem;
+  right: 6.4rem;
   top: 1.5rem;
 
 }
 .cam__div{
-  right: 1rem;
+  right: 3.8rem;
   top: 1.5rem;
 
 }
 .cam{
-  height: 1.6rem !important;
-  width: 1.6rem !important;
+  height: 1.5rem !important;
+  width: 1.5rem !important;
 }
 
 
@@ -267,6 +267,15 @@ a {
 .ofrecido__div{
   color: #4d5156;
   font: 13px arial, sans-serif;
+}
+
+/* CSS IMAGES */
+.lupa_azul{
+  top: 0.1rem;
+  color: #4285f4 !important;
+  font-size: 1.5rem !important;
+  left: 2.7rem;
+  cursor: pointer ;
 }
 
 
