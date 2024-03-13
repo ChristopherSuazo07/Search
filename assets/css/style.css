@@ -271,7 +271,7 @@ a {
   font: 13px arial, sans-serif;
 }
 
-/* CSS IMAGES */
+/* IMAGES CSS */
 .lupa_azul{
   top: 0.1rem;
   color: #4285f4 !important;
@@ -279,6 +279,84 @@ a {
   left: 2.7rem;
   cursor: pointer ;
 }
+
+/* ADVANCED CSS */
+.advanced__div{
+  color: #d93025;
+  font-family: arial, sans-serif;
+  font-size: 1.25rem;
+}
+
+.main__div{
+  max-width: 1140px;
+  min-width: 200px;
+  width: 96%;
+  margin: 40px 2% 0 45px
+}
+h2{
+  color: #777;
+}
+
+label{
+  min-width: 167px;
+  width: 16%;
+  height: 42px;
+  color: #222;
+  font-size: 13px;
+}
+
+.input__adv{
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  font-size: 13px;
+  height: 25px;
+  padding: 1px 8px;
+  min-width: 167px;
+  width: 50%;
+  
+}
+.find__h2{
+  color: #333;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: inherit;
+}
+.to__h2{
+  font-size: 13px;
+  font-weight: 700;
+  color: #777;
+  margin-right: 12rem;
+}
+
+.txt__span {
+  width: 32%;
+  color: #666;
+  font-family: monospace;
+  font-size: 11px; 
+  
+}
+
+.a__btn{
+  background-color:-webkit-linear-gradient(top, #4d90fe, #4787ed) !important;
+  color: #fff !important;
+}
+.d-inline-blok{
+  display: inline-block ;
+}
+
+
+@media screen and (max-width: 1186px){
+  .bye_bye{
+
+    display: none !important;
+  }
+
+  .d-inline-blok {
+    display: none !important;
+  }
+  
+} 
+
 
 
 

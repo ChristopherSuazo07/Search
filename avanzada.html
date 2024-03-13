@@ -6,28 +6,115 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Product+Sans&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" type="image/svg" href="assets/images/G__google.svg">
-    <title>Document</title>
-</head>
-<body>
-    <div class="navbar">
-        <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" height="24px" width="74px" style="display: inline-block;">
-    </div>
-    <div style="border-bottom: solid 1px aqua;">
-        <label style="margin-left:10px">Búsqueda avanzada</label>
-    </div>
+    <title>Google</title>
+    <link rel="icon" type="image/svg" href="assets/images/G__google.png">
+</head> 
 
-    <div>
-        <form action="https://www.google.com/search">
-            <input type="text" name="as_q"><br>
-            <input type="text" name="as_epq"><br>
-            <input type="text" name="as_oq"><br>
-            <input type="text" name="as_eq"><br>
+<body class="d-flex flex-column">
+    <header class="border-bottom">
+        <nav class="navbar navbar-expand-lg gap-3 ">
+            <div class="container-fluid p-1 ul__div">
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span> -->
+                <!-- </button> -->
+                <div class="collapse navbar-collapse d-flex align-items-center " id="navbarNav">
+                    <div class="ms-3">
+                        <a href="index.html"><img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt=""></a>
 
-            <input type="submit" value="Búsqueda Avanzada">
-        </form>
-        
-    </div>
+                    </div>
+                    <ul class="navbar-nav gap-4 ms-auto mt-2  nav__ul flex-row">
+
+                        <li class="nav-item mt-1">
+                            <a class="ms-auto text-decoration-none  avanzada__a nav__a" href="index.html">Google Search</a>
+                        </li>
+                            
+                        <li class="nav-item mt-1">
+                            <a class=" text-decoration-none images__a nav__a" href="images.html">Images</a>
+                        </li>
+                            
+                        <!-- <li class="nav-item mt-1">
+                            <a class="images__a nav__a" href="index.html ">Google Search</a>
+                        </li> -->
+                        <li class="nav-item mt-1">
+                            <a class="images__a nav__a" href="https://www.google.com/intl/es-419/gmail/about/">Gmail</a>
+                        </li>
+
+                        
+                        <li class="nav-item mt-1 app__li">
+                            <span class=" avanzada__a nav__a app__span"><img class="opacity-50 app__img" title="Google App" src="./assets/images/App__google.svg" alt="App"></span>
+                        </li>
+                        
+                        <li class="nav-item mt-1">
+                            <!-- <button type="button nav__a" class="ms-auto btn btn-primary acceder__btn me-4"><a class=" acceder__a" href="">Acceder</a></button> -->
+                        <img class="rounded-circle me-4     s__img" src="https://lh3.googleusercontent.com/fife/ALs6j_G3arnBu0cEx45mT1nbcl5lb6lj9zXpPlmjwYDhJ1A1yafCxNhqrTxj6zcvSB9D8e0sGbWonWuKOsSSWmc5i7o_Phqiy9mjLCqBIkkxmzFNT21Z5fbVmzVnpdOxcyoK89TV2qFfAhDsbcy9w3qj47DNtRm1bA24njXvPZpI0peoWf10GuBj4fBTezU3Q3pisb6sg6sHF1H0wbg9TkqwOhmOPKgkvLmv0WqudbUfwba380qOxeL4ibL8F0SyQuTsKbzP_DxZCFO3aUXakwKtmNmkjxtUBPh7GHgvux0B9mocBsmvMDlk2bfk2C0xiQx6cktLQ0n8dN5rUhn3bdZL6lit2EdLkiKuOEginyS92FKaOMqJJfnCu0M50YUa1fpiPvZfQoV1vBHZFgP9d03SjJiJAuIgQJdb0K4lO2D1bWIfLmX7KWHTl4FQddCDFUnUqbO7Q6Oof15uqRvbfvx6tsEY3vijLFghXMwUoVE__G_G-tnkTmUWofSyHoknac1R20MBpbOlofYhqHprLeDrgqnVRukHVk8EsCFt5tOfH077LTiJ0A1Db6B21ddzaz0W6GO8TgUoElB0i3_ysyXLjOBFljcfjuwIv1l5SVf26dHu9KHxVO9UxS_4fBwer1wRQty02VdPW-mCZYP1Iu58vCM2GTJNqB81hO6J8DTJ5v-J_K2nk2yJy9SX9d2d9U7bghbm8acmJ_X6_9hHv2bHFyzh4PDIXOSyy05G8FwtGQBhL5ZY-pCkBxGDHHaAdy1qUAKX53iimNFQElBkPIrPIvRUGvTxot1M5q8pxeDu1cdUiY5AidUAHkE31TaHX0DD89g3DoBZmAm3BhXA6tDSsxUhJ17zQ_G63q8AxTGwmoerFiqV_l5DgigZy9mweHkgsQ_187l95HQRVs5m2HY-uXrmyS05ksp33z47VXmlh1V7U_gq87aj6pBKuGLuqWd_qvhwqatIejiDlOakX1zZzLo3BLnPT3wxmCKGxhHnXNeLsbQ5_giFGVptV2tzC5_aOLDNzt_NtYoLMuzZwlPkzs0OfkMddF0qbuuwY5H0aX9cJcCUhTlZdV4x3lDkm8nXYFnDzya4LfAI5G1s2inGRxJBLCHY1csyjugdvVz3HEvKB2Va8JFV-phLFjLcpgF0oGdEF8S7cxm-DSrlO-7pDjkyq0Ipl_89g3QuJ8l13C3H4UWZvv2Ee4n8-EAn6UiUbzAk3jxev6cLMs6O5KCN586bu_sXHjCyeZir0dC5BXxY6GlwmyOJSuPZmzMVCwl0weYImDKV96bN-vfWbbMyKpX-tlqe9mtF105G9Q0jOFUIKJgF32QJp7GKmaNfpi74wZXMq1whlGCn3-ndYfXfCjwJ2D9AJjXgWczKxEmhK2NspG7vK3QfSUtuwA=s32-c" alt="S" title="Google Account">
+                        </li>
+                        
+                    </ul>
+                </div>   
+            </div>
+            
+        </nav>
+        <h1 class="ms-5 mb-4  mt-3 advanced__div">Advanced Search</h1>
+    </header>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <main class="h-100">
+        <form action="https://www.google.com/search">
+            <div class="main__div mb-5">
+                <div class="d-flex justify-content-between">
+                <h2 class="find__h2">Find pages with...</h2>
+                <h2 class="to__h2 bye_bye">To do this in the search box.</h2>
+        
+                </div>
+                <div class="d-flex flex-column">
+                    
+                    <div class="labels__divs"><label for="">all these words:</label><input class="input__adv" type="text" name="as_q">
+                    
+                        <span class="txt__span ms-3 bye_bye">
+                            Type the important words: <span>tri-colour rat terrier</span>
+                        </span>
+                    </div>
+                    <div class="labels__divs"><label for="">this exact word or phrase:</label><input class="input__adv" type="text" name="as_epq">
+                        <span class="txt__span ms-3 bye_bye">Put exact words in quotes: "rat terrier"</span>
+                    </div>
+                    <div class="labels__divs"><label for="">any of these words:</label><input class="input__adv" type="text" name="as_oq">
+                        <div class="txt__span ms-3 d-inline-blok bye_bye">Type OR between all the words you want: miniature OR standard</div>
+                    </div>
+                    <div class="labels__divs"><label for="">none of these words:</label><input class="input__adv" type="text" name="as_eq">
+                        <div class="txt__span ms-3 d-inline-blok bye_bye">Put a minus sign just before words that you don't want:<span class="bye_bye"> -rodent, -"Jack Russell"</span></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class=" d-flex justify-content-center">
+                <button  class="btn btn-primary active a__btn">Advanced Search</button> 
+            </div>
+        </form>
+    </main>
+    
+    <footer class="">
+        <div class="d-flex ps-4 py-2 nicaragu_div my-1">
+            Nicaragua
+        </div>
+        <ul class="list-unstyled d-flex flex-wrap quick-links px-4 align-items-bottom quicklinks_ul">
+            <div class="d-flex  gap-3  flex-wrap my-3 ">
+                <li><a href="#" class=" text-decoration-none">About</a></li>
+                <li><a href="#" class="text-decoration-none">Advertising</a></li>
+                <li><a href="#" class="text-decoration-none">Business</a></li>      
+                <li><a href="#" class="text-decoration-none">How Search Works</a></li>    
+            </div>
+            <div class="d-flex  gap-3 me-4 my-3">
+                <li><a href="#" class="text-decoration-none">Privacy</a></li>
+                <li><a href="#" class="text-decoration-none">Terms</a></li>
+                <li><a href="#" class="text-decoration-none">Settings</a></li>
+            </div>
+        </ul>       
+        <div class="">
+        </div>
+    </footer>
 </body>
 </html>
